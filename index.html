@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+
+      
+      <div type="button" id="blue" class="btn blue">
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="instruction" data-modal-target="#modal">
+    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Simon's Game</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <img class="gif" src="img.gif">
+    </div>
+  </div>
+  <div id="overlay"></div>-- !
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
